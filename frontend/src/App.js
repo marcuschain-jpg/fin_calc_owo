@@ -5,7 +5,7 @@ const App = () => {
   const [user,setUser] = useState([])
 
     const getUser= () =>{
-      fetch("/api/user")
+      fetch("/backend/user")
       .then(res => res.json())
       .then(json => setUser(json))
     }

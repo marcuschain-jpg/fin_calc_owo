@@ -3,11 +3,11 @@ import users from "./user.js"
 
 const app = express()
 
-app.get("/", (req,res)=>{
+app.get ("/", (req,res)=>{
     res.send("Server is ready")
 })
 
-app.get("/api/user", (req,res)=>{
+app.get("/backend/user", (req,res)=>{
     res.send(users)
 })
 
